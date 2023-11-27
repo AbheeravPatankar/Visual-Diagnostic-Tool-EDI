@@ -61,14 +61,14 @@ int main()
     wchar_t* commandLineArgs = nullptr;
 
     // Launch the process using the function.
-    if (LaunchProcess(targetProcessPath, commandLineArgs))
-    {
-        std::cout << "Process launched successfully." << std::endl;
-    }
-    else
-    {
-        std::cerr << "Failed to launch the process." << std::endl;
-    }
+    //if (LaunchProcess(targetProcessPath, commandLineArgs))
+    //{
+    //    std::cout << "Process launched successfully." << std::endl;
+    //}
+    //else
+    //{
+    //    std::cerr << "Failed to launch the process." << std::endl;
+    //}
 
 
 

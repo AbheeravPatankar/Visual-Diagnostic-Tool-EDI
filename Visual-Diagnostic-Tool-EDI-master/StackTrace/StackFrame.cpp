@@ -177,7 +177,6 @@ void StackFrame::ToString()
 	ret << m_returnType->ToString() << " ";
 	//ret << m_callConvention << " ";
 		ret << m_functionName << "(";
-
 		for (UINT i = 0; i < m_parameters.size(); ++i)
 		{
 			if (i > 0)

@@ -480,7 +480,7 @@ std::string FunctionObject::ToString()
 		else
 		{
 			
-			ret << m_typeName << " " << m_objName << " = " << GetValueString();
+			ret << m_typeName << " " << m_objName << " = " << GetValueString() << " " << address;
 			return ret.str();
 		}
 	}
@@ -544,7 +544,7 @@ void FunctionObject::LoadValue(STACKFRAME64 frame, ULONG64 addr, enum SymTagEnum
 	//stack so we get a pointer to the data by adding the offset to the frame pointer
 
 	LPVOID mem = (LPVOID)(frame.AddrFrame.Offset + addr);
-
+	address = mem;
 
 	if (m_tag == SymTagEnum)
 	{

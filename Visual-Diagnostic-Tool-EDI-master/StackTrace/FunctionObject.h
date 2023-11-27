@@ -27,6 +27,7 @@ class FunctionObject
 	std::string m_enumValue;
 	bool m_isReturnObj;
 	bool isUDT;
+	LPVOID address;
 
 	PSYMBOL_INFO m_symbol;
 
